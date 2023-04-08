@@ -2,43 +2,43 @@
   <v-app>
     <v-navigation-drawer app>
       <v-list dense>
-      <v-subheader>МЕНЮ</v-subheader>
-      <v-list-item-group
-        color="primary"
-      >
-        <v-list-item
-          to="/"
+        <v-subheader>МЕНЮ</v-subheader>
+        <v-list-item-group
+          color="primary"
         >
-          <v-list-item-icon>
-            <v-icon>mdi-view-carousel</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>Статьи</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+          <v-list-item
+            to="/"
+          >
+            <v-list-item-icon>
+              <v-icon>mdi-view-carousel</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Статьи</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
 
-        <v-list-item
-          to="/about"
-        >
-          <v-list-item-icon>
-            <v-icon>mdi-information-outline</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>О нас</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
+          <v-list-item
+            to="/about"
+          >
+            <v-list-item-icon>
+              <v-icon>mdi-information-outline</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>О нас</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
 
-        <v-list-item
-          to="/table">
-          <v-list-item-icon>
-            <v-icon>mdi-table</v-icon>
-          </v-list-item-icon>
-          <v-list-item-content>
-            <v-list-item-title>Таблица</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list-item-group>
-    </v-list>
+          <v-list-item
+            to="/table">
+            <v-list-item-icon>
+              <v-icon>mdi-table</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Таблица</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
     </v-navigation-drawer>
 
     <v-app-bar
@@ -98,38 +98,38 @@
       </v-container>
     </v-main>
 
-    <v-footer app
-    dark
-    padless
-    >
-      <v-card
-        class="flex"
-        flat
-        tile
+    <v-footer
+        dark
+        padless
       >
-        <v-card-title class="primary">
-          <strong class="subheading">Get connected with us on social networks!</strong>
+        <v-card
+          class="flex"
+          flat
+          tile
+        >
+          <v-card-title class="primary">
+            <strong class="subheading">Get connected with us on social networks!</strong>
 
-          <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
 
-          <v-btn
-            v-for="icon in {0:'twitter', 1:'instagram', 2:'twitch', 3:'facebook'}"
-            :key="icon"
-            class="mx-4"
-            dark
-            icon
-          >
-            <v-icon size="24px">
-              mdi-{{ icon }}
-            </v-icon>
-          </v-btn>
-        </v-card-title>
+            <v-btn
+              v-for="icon in {0:'twitter', 1:'instagram', 2:'twitch', 3:'facebook'}"
+              :key="icon"
+              class="mx-4"
+              dark
+              icon
+            >
+              <v-icon size="24px">
+                mdi-{{ icon }}
+              </v-icon>
+            </v-btn>
+          </v-card-title>
 
-        <v-card-text class="py-2 white--text text-center">
-          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-        </v-card-text>
-      </v-card>
-    </v-footer>
+          <v-card-text class="py-2 white--text text-center">
+            {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+          </v-card-text>
+        </v-card>
+      </v-footer>
   </v-app>
 </template>
 
@@ -148,5 +148,8 @@ export default {
 a {
   text-decoration: none;
   color:black
+}
+footer {
+  z-index: 99;
 }
 </style>
