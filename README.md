@@ -1,4 +1,10 @@
-# sportmaster
+# SportmasterVue2Project
+Vue 2 application for courses conducted at the university by the company "Spormaster"
+## Modules
+This project uses modules such as
+- vuex
+- vue-router
+- vuetify
 
 ## Project setup
 ```
